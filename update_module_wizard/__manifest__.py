@@ -1,7 +1,7 @@
 {
     'name': 'Update module wizard',
 
-    'version': '1.0',
+    'version': '1.1',
     'category': 'Other',
     'author': 'woopzzz',
     'license': 'LGPL-3',

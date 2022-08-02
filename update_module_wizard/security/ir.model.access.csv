@@ -1,2 +1,2 @@
-"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
-update_addons_from_home_menu.access_ir_module_update,access_ir_module_update,update_addons_from_home_menu.model_ir_module_update,base.group_system,1,1,1,1
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+update_module_wizard.access_ir_module_update,access_ir_module_update,update_module_wizard.model_ir_module_update,base.group_system,1,1,1,1
