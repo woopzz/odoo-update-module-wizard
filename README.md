@@ -2,6 +2,9 @@
 
 An Odoo addon which helps developers to reduce the time needed to run a module update.
 
+There are branches named after the major Odoo versions.
+You can find a corresponding version of the module there.
+
 [A demo on Youtube](https://youtu.be/qTxWRm-1Hxg)
 
 > Don't take extra time to press the wizard buttons by mouse. Use `Alt+R` or `Escape` instead.
