@@ -14,6 +14,10 @@
                 </group>
                 <footer>
                     <button type="object" name="run" string="Run" class="btn-primary" data-hotkey="r" />
+                    <button
+                        type="object" name="action_update_apps_list"
+                        string="Update Apps List" class="btn-secondary" data-hotkey="t"
+                    />
                     <button special="cancel" string="Cancel" class="btn-secondary" />
                 </footer>
             </form>
