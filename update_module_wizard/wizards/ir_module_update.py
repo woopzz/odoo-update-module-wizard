@@ -7,7 +7,6 @@ class IrModuleUpdate(models.TransientModel):
 
     module_id = fields.Many2one(
         comodel_name='ir.module.module',
-        required=True,
         domain="[('state', 'in', ['uninstalled', 'installed'])]",
     )
     latest_version = fields.Char(
@@ -17,7 +16,13 @@ class IrModuleUpdate(models.TransientModel):
     def run(self):
         self.ensure_one()
 
+        if not self.module_id:
+            return
+
         if self.module_id.state == 'uninstalled':
             return self.module_id.button_immediate_install()
 
         return self.module_id.button_immediate_upgrade()
+
+    def action_update_apps_list(self):
+        self.env['ir.module.module'].update_list()
